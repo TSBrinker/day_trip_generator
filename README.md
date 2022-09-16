@@ -1,3 +1,2 @@
 # day_trip_generator
-This is my first project
-I'm gonna make a generator that will generate a day trip
+A generator that will provide the user with a random selection of transportation, a destination, a restaurant, and an activity to plan a hypothetical day trip. If unhappy with generated day trip, a user is able to re-roll for a new trip until satisfied.

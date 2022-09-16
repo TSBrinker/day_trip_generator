@@ -2,16 +2,13 @@ import random
 import time
 from time import sleep
 
-destinations = ['Des Moines', 'Chicago', 'Minneapolis', 'St. Paul', 'Omaha', 'Kansas City']
-transports = ['a plane', 'a train', 'a bus', 'your vehicle']
-# automobiles = ['your own vehicle', 'an uber', 'a bus']
+destinations = ['Des Moines', 'Chicago', 'Minneapolis', 'St. Paul', 'Omaha', 'Kansas City', 'Milwaukee', 'Madison', 'LaCrosse']
+transports = ['a plane', 'a train', 'a bus', 'your vehicle', 'a taxi', 'an Uber']
 restaurants = ['Applebees', 'Red Lobster', "Wendy's", "Raising Cane's", 'Olive Garden']
-entertainment_options = ['the zoo', 'the clubs', 'a park', 'a museum', 'a concert']
+entertainment_options = ['the zoo', 'the clubs', 'a park', 'a museum', 'a concert', 'a game', 'a theme park', 'the sights']
 
-def name_capture():
-    print('Hello, User!')
-    user_name = input('What is your name? ')
-    return user_name
+# print('Hello, User!')
+# user = input('What is your name? ')
 
 def transport_select():
     transportation = random.choice(transports)
@@ -36,24 +33,25 @@ def fun_select():
     fun = random.choice(entertainment_options)
     return fun
 
-user = name_capture()
-
-
 def generation():
-    transport = transport_select()
-    destination = destination_select()
-    food = food_select()
-    fun = fun_select()
-
-def confirmation():
-    approval = ""
-    while approval == "" or approval == "n":
-        generation()
-        print(f"We think you should take {transport} to {destination}. While you're there, you should grab {food} and enjoy {fun}. Sound good? y or n: ")
-
+    approval = " "
+    while approval != 'y':
+        transport = transport_select()
+        destination = destination_select()
+        food = food_select()
+        fun = fun_select()
+        approval = input(f"We think you should take {transport} to {destination}. While you're there, you should grab {food} and enjoy {fun}. Sound good? y or n: ")
+    else: 
+        print(f"Great choice! You're going to love taking {transport} to {destination}, and we hope you'll enjoy {food} and {fun}!")
 
 generation()
-confirmation()
+
+# def confirmation():
+#     approval = ""
+#     while approval == "" or approval == "n":
+#         generation()
+#         print(f"We think you should take {transport} to {destination}. While you're there, you should grab {food} and enjoy {fun}. Sound good? y or n: ")
+
 
 # def confirmation():
 #     approval = ""
