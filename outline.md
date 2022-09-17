@@ -33,3 +33,6 @@ Fine tuning if I get to it:
 Delays in input
 Characterization of the program ("Hmm, let me think..." etc.)
 
+randomizer
+take in random selections - export to list
+then output by index "lets take 1 to 2, and do 3 and 4"
