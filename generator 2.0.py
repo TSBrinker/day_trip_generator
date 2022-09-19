@@ -4,7 +4,7 @@ from time import sleep
 
 transports = ['a plane', 'a train', 'a bus', 'your vehicle', 'a taxi', 'an Uber']
 destinations = ['Des Moines', 'Chicago', 'Minneapolis', 'St. Paul', 'Omaha', 'Kansas City', 'Milwaukee', 'Madison', 'LaCrosse']
-restaurants = ['Applebees', 'Red Lobster', "Wendy's", "Raising Cane's", 'Olive Garden', 'a buffet', 'a taco truck', 'a BBQ joint', 'a literal fish, still alive']
+restaurants = ['Applebees', 'Red Lobster', "Wendy's", "Raising Cane's", 'Olive Garden', 'a buffet', 'a taco truck', 'a BBQ joint', 'a literal live fish']
 entertainment_options = ['the zoo', 'the clubs', 'a park', 'a museum', 'a concert', 'a game', 'a theme park', 'the sights']
 
 def update_list(article, from_list):
