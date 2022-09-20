@@ -7,9 +7,6 @@ destinations = ['Des Moines', 'Chicago', 'Minneapolis', 'St. Paul', 'Omaha', 'Ka
 restaurants = ['Applebees', 'Red Lobster', "Wendy's", "Raising Cane's", 'Olive Garden', 'a buffet', 'a taco truck', 'a BBQ joint']
 entertainment_options = ['the zoo', 'the clubs', 'a park', 'a museum', 'a concert', 'a game', 'a theme park', 'the sights']
 
-def update_list(article, from_list):
-    from_list.remove(article)
-
 def restore_original_list(main_list, refill_list):
     if len(main_list) == 0:
         main_list = refill_list.copy()
